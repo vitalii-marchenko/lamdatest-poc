@@ -50,8 +50,9 @@ public class MobileDriverProviderLambdaTest implements WebDriverProvider {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-        ltOptions.put("username", "your-acc-name");
-        ltOptions.put("accessKey", "token");
+        ltOptions.put("username", "");
+        ltOptions.put("accessKey", "");
+
         ltOptions.put("project", "Test Project");
         ltOptions.put("w3c", true);
         ltOptions.put("plugin", "java-testNG");
