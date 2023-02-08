@@ -26,8 +26,8 @@ public class MobileDriverProvider implements WebDriverProvider {
     private WebDriver createDriverForPlatform(String platform) {
         try {
             String appiumUrl1 = "http://127.0.0.1:4723";
-            String username = "vitaly38";
-            String accessKey = "rJYtYcCVAMtfarwEzfoT";
+            String username = "";
+            String accessKey = "";
             String server = "hub-cloud.browserstack.com";
             String appiumUrl = "http://" + username + ":" + accessKey + "@" + server + "/wd/hub";
 
