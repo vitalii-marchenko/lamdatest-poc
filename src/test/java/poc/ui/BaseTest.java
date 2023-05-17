@@ -3,13 +3,14 @@ package poc.ui;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.appium.SelenideAppium;
 import org.example.MobileDriverProviderLambdaTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         closeWebDriver();
         closeApp();

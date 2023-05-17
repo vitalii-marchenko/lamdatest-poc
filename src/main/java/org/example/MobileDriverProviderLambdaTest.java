@@ -15,8 +15,8 @@ import java.util.HashMap;
 public class MobileDriverProviderLambdaTest implements WebDriverProvider {
 
     public String gridURL = "@mobile-hub.lambdatest.com/wd/hub";
-    String userName = "markony647";
-    String accessKey = "kMhV5BZsoWTlgtqBbuzRM3Z8zVYSzcw0d1iG1zowXBdJzmmmr2";
+    String userName = "name";
+    String accessKey = "key";
 
     @Nonnull
     @Override
@@ -50,18 +50,19 @@ public class MobileDriverProviderLambdaTest implements WebDriverProvider {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-        ltOptions.put("username", "");
-        ltOptions.put("accessKey", "");
+        ltOptions.put("username", "vitalii.marchenko");
+        ltOptions.put("accessKey", "iuuIFBDwtQlPjbTm8nHAdjeUfGTxgQVmHWXlY5FCSUCgeH3NjD");
 
         ltOptions.put("project", "Test Project");
         ltOptions.put("w3c", true);
+        ltOptions.put("build", "2");
         ltOptions.put("plugin", "java-testNG");
         ltOptions.put("platformName", "android");
         ltOptions.put("isRealMobile", true);
         ltOptions.put("deviceName", device);
-        ltOptions.put("name", platform + " " +device + " " + version);
+        ltOptions.put("name", platform + " " + device + " " + version);
         ltOptions.put("platformVersion", version);
-        ltOptions.put("app", "lt://APP10160202521675178632638211");
+        ltOptions.put("app", "lt://APP10160531401681283895723522");
         ltOptions.put("console", true);
         ltOptions.put("network", true);
         ltOptions.put("visual", true);
